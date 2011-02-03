@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA8F15CB12F4A12E006D6025 /* STVActionSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8F15C912F4A12E006D6025 /* STVActionSheetController.h */; };
+		DA8F15CC12F4A12E006D6025 /* STVActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F15CA12F4A12E006D6025 /* STVActionSheetController.m */; };
+		DAABBEF112EFEFF000B1A1EB /* STV_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DAABBEF012EFEFF000B1A1EB /* STV_Prefix.pch */; };
+		DAABBF1712EFF1B800B1A1EB /* SimpleTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBEF912EFF1B800B1A1EB /* SimpleTableView.h */; };
+		DAABBF1912EFF1B800B1A1EB /* STVCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBEFB12EFF1B800B1A1EB /* STVCellController.h */; };
+		DAABBF1A12EFF1B800B1A1EB /* STVCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBEFC12EFF1B800B1A1EB /* STVCellController.m */; };
+		DAABBF1B12EFF1B800B1A1EB /* STVCoreDataListController.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBEFD12EFF1B800B1A1EB /* STVCoreDataListController.h */; };
+		DAABBF1C12EFF1B800B1A1EB /* STVCoreDataListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBEFE12EFF1B800B1A1EB /* STVCoreDataListController.m */; };
+		DAABBF1D12EFF1B800B1A1EB /* STVCurrencyFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBEFF12EFF1B800B1A1EB /* STVCurrencyFormatter.h */; };
+		DAABBF1E12EFF1B800B1A1EB /* STVCurrencyFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBF0012EFF1B800B1A1EB /* STVCurrencyFormatter.m */; };
+		DAABBF1F12EFF1B800B1A1EB /* STVGradientBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBF0112EFF1B800B1A1EB /* STVGradientBackgroundView.h */; };
+		DAABBF2012EFF1B800B1A1EB /* STVGradientBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBF0212EFF1B800B1A1EB /* STVGradientBackgroundView.m */; };
+		DAABBF2712EFF1B800B1A1EB /* STVSwitchCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBF0912EFF1B800B1A1EB /* STVSwitchCellController.h */; };
+		DAABBF2812EFF1B800B1A1EB /* STVSwitchCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBF0A12EFF1B800B1A1EB /* STVSwitchCellController.m */; };
+		DAABBF2912EFF1B800B1A1EB /* STVSwitchCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBF0B12EFF1B800B1A1EB /* STVSwitchCellView.h */; };
+		DAABBF2A12EFF1B800B1A1EB /* STVSwitchCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBF0C12EFF1B800B1A1EB /* STVSwitchCellView.m */; };
+		DAABBF2B12EFF1B800B1A1EB /* STVTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBF0D12EFF1B800B1A1EB /* STVTableViewController.h */; };
+		DAABBF2C12EFF1B800B1A1EB /* STVTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBF0E12EFF1B800B1A1EB /* STVTableViewController.m */; };
+		DAABBF2D12EFF1B800B1A1EB /* STVTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBF0F12EFF1B800B1A1EB /* STVTableViewDataSource.h */; };
+		DAABBF2E12EFF1B800B1A1EB /* STVTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBF1012EFF1B800B1A1EB /* STVTableViewDataSource.m */; };
+		DAABBF2F12EFF1B800B1A1EB /* STVSection.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBF1112EFF1B800B1A1EB /* STVSection.h */; };
+		DAABBF3012EFF1B800B1A1EB /* STVSection.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBF1212EFF1B800B1A1EB /* STVSection.m */; };
+		DAABBF3112EFF1B800B1A1EB /* STVTextEditCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBF1312EFF1B800B1A1EB /* STVTextEditCellController.h */; };
+		DAABBF3212EFF1B800B1A1EB /* STVTextEditCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBF1412EFF1B800B1A1EB /* STVTextEditCellController.m */; };
+		DAABBF3312EFF1B800B1A1EB /* STVTextEditCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBF1512EFF1B800B1A1EB /* STVTextEditCellView.h */; };
+		DAABBF3412EFF1B800B1A1EB /* STVTextEditCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABBF1612EFF1B800B1A1EB /* STVTextEditCellView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA2A237E12AEAEFC00D0C083 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DA2A238012AEAEFC00D0C083 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		DA5C9F291297A8DD00194120 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DA640B2B12F28D7900094F25 /* STVPopoverControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVPopoverControllers.h; sourceTree = "<group>"; };
+		DA640B2C12F28D7900094F25 /* STVPopoverControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVPopoverControllers.m; sourceTree = "<group>"; };
+		DA8F15C912F4A12E006D6025 /* STVActionSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVActionSheetController.h; sourceTree = "<group>"; };
+		DA8F15CA12F4A12E006D6025 /* STVActionSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVActionSheetController.m; sourceTree = "<group>"; };
+		DAABBE8012EFEBE700B1A1EB /* libSimpleTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSimpleTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAABBEF012EFEFF000B1A1EB /* STV_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STV_Prefix.pch; sourceTree = "<group>"; };
+		DAABBEF912EFF1B800B1A1EB /* SimpleTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableView.h; sourceTree = "<group>"; };
+		DAABBEFB12EFF1B800B1A1EB /* STVCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVCellController.h; sourceTree = "<group>"; };
+		DAABBEFC12EFF1B800B1A1EB /* STVCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVCellController.m; sourceTree = "<group>"; };
+		DAABBEFD12EFF1B800B1A1EB /* STVCoreDataListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVCoreDataListController.h; sourceTree = "<group>"; };
+		DAABBEFE12EFF1B800B1A1EB /* STVCoreDataListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVCoreDataListController.m; sourceTree = "<group>"; };
+		DAABBEFF12EFF1B800B1A1EB /* STVCurrencyFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVCurrencyFormatter.h; sourceTree = "<group>"; };
+		DAABBF0012EFF1B800B1A1EB /* STVCurrencyFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVCurrencyFormatter.m; sourceTree = "<group>"; };
+		DAABBF0112EFF1B800B1A1EB /* STVGradientBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVGradientBackgroundView.h; sourceTree = "<group>"; };
+		DAABBF0212EFF1B800B1A1EB /* STVGradientBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVGradientBackgroundView.m; sourceTree = "<group>"; };
+		DAABBF0912EFF1B800B1A1EB /* STVSwitchCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVSwitchCellController.h; sourceTree = "<group>"; };
+		DAABBF0A12EFF1B800B1A1EB /* STVSwitchCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVSwitchCellController.m; sourceTree = "<group>"; };
+		DAABBF0B12EFF1B800B1A1EB /* STVSwitchCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVSwitchCellView.h; sourceTree = "<group>"; };
+		DAABBF0C12EFF1B800B1A1EB /* STVSwitchCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVSwitchCellView.m; sourceTree = "<group>"; };
+		DAABBF0D12EFF1B800B1A1EB /* STVTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVTableViewController.h; sourceTree = "<group>"; };
+		DAABBF0E12EFF1B800B1A1EB /* STVTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVTableViewController.m; sourceTree = "<group>"; };
+		DAABBF0F12EFF1B800B1A1EB /* STVTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVTableViewDataSource.h; sourceTree = "<group>"; };
+		DAABBF1012EFF1B800B1A1EB /* STVTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVTableViewDataSource.m; sourceTree = "<group>"; };
+		DAABBF1112EFF1B800B1A1EB /* STVSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVSection.h; sourceTree = "<group>"; };
+		DAABBF1212EFF1B800B1A1EB /* STVSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVSection.m; sourceTree = "<group>"; };
+		DAABBF1312EFF1B800B1A1EB /* STVTextEditCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVTextEditCellController.h; sourceTree = "<group>"; };
+		DAABBF1412EFF1B800B1A1EB /* STVTextEditCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVTextEditCellController.m; sourceTree = "<group>"; };
+		DAABBF1512EFF1B800B1A1EB /* STVTextEditCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVTextEditCellView.h; sourceTree = "<group>"; };
+		DAABBF1612EFF1B800B1A1EB /* STVTextEditCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVTextEditCellView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAABBE7E12EFEBE700B1A1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAABBE8012EFEBE700B1A1EB /* libSimpleTableView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* GDK */ = {
+			isa = PBXGroup;
+			children = (
+				DAABBEF812EFF1B800B1A1EB /* SimpleTabelView */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				DA2A237E12AEAEFC00D0C083 /* CoreData.framework */,
+				DA2A238012AEAEFC00D0C083 /* CoreFoundation.framework */,
+			);
+			name = GDK;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				DA5C9F291297A8DD00194120 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DAABBEF012EFEFF000B1A1EB /* STV_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		DA640B2512F28BB700094F25 /* CellController */ = {
+			isa = PBXGroup;
+			children = (
+				DAABBEFB12EFF1B800B1A1EB /* STVCellController.h */,
+				DAABBEFC12EFF1B800B1A1EB /* STVCellController.m */,
+			);
+			name = CellController;
+			sourceTree = "<group>";
+		};
+		DA640B2612F28BD400094F25 /* SwitchCellController */ = {
+			isa = PBXGroup;
+			children = (
+				DAABBF0912EFF1B800B1A1EB /* STVSwitchCellController.h */,
+				DAABBF0A12EFF1B800B1A1EB /* STVSwitchCellController.m */,
+				DAABBF0B12EFF1B800B1A1EB /* STVSwitchCellView.h */,
+				DAABBF0C12EFF1B800B1A1EB /* STVSwitchCellView.m */,
+			);
+			name = SwitchCellController;
+			sourceTree = "<group>";
+		};
+		DA640B2712F28BED00094F25 /* TextEditCell */ = {
+			isa = PBXGroup;
+			children = (
+				DAABBF1312EFF1B800B1A1EB /* STVTextEditCellController.h */,
+				DAABBF1412EFF1B800B1A1EB /* STVTextEditCellController.m */,
+				DAABBF1512EFF1B800B1A1EB /* STVTextEditCellView.h */,
+				DAABBF1612EFF1B800B1A1EB /* STVTextEditCellView.m */,
+			);
+			name = TextEditCell;
+			sourceTree = "<group>";
+		};
+		DAABBEF812EFF1B800B1A1EB /* SimpleTabelView */ = {
+			isa = PBXGroup;
+			children = (
+				DA640B2712F28BED00094F25 /* TextEditCell */,
+				DA640B2612F28BD400094F25 /* SwitchCellController */,
+				DA640B2512F28BB700094F25 /* CellController */,
+				DAABBEF912EFF1B800B1A1EB /* SimpleTableView.h */,
+				DAABBEFD12EFF1B800B1A1EB /* STVCoreDataListController.h */,
+				DAABBEFE12EFF1B800B1A1EB /* STVCoreDataListController.m */,
+				DAABBEFF12EFF1B800B1A1EB /* STVCurrencyFormatter.h */,
+				DAABBF0012EFF1B800B1A1EB /* STVCurrencyFormatter.m */,
+				DAABBF0112EFF1B800B1A1EB /* STVGradientBackgroundView.h */,
+				DAABBF0212EFF1B800B1A1EB /* STVGradientBackgroundView.m */,
+				DAABBF0D12EFF1B800B1A1EB /* STVTableViewController.h */,
+				DAABBF0E12EFF1B800B1A1EB /* STVTableViewController.m */,
+				DAABBF0F12EFF1B800B1A1EB /* STVTableViewDataSource.h */,
+				DAABBF1012EFF1B800B1A1EB /* STVTableViewDataSource.m */,
+				DAABBF1112EFF1B800B1A1EB /* STVSection.h */,
+				DAABBF1212EFF1B800B1A1EB /* STVSection.m */,
+				DA640B2B12F28D7900094F25 /* STVPopoverControllers.h */,
+				DA640B2C12F28D7900094F25 /* STVPopoverControllers.m */,
+				DA8F15C912F4A12E006D6025 /* STVActionSheetController.h */,
+				DA8F15CA12F4A12E006D6025 /* STVActionSheetController.m */,
+			);
+			path = SimpleTabelView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DAABBE7C12EFEBE700B1A1EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAABBEF112EFEFF000B1A1EB /* STV_Prefix.pch in Headers */,
+				DAABBF1712EFF1B800B1A1EB /* SimpleTableView.h in Headers */,
+				DAABBF1912EFF1B800B1A1EB /* STVCellController.h in Headers */,
+				DAABBF1B12EFF1B800B1A1EB /* STVCoreDataListController.h in Headers */,
+				DAABBF1D12EFF1B800B1A1EB /* STVCurrencyFormatter.h in Headers */,
+				DAABBF1F12EFF1B800B1A1EB /* STVGradientBackgroundView.h in Headers */,
+				DAABBF2712EFF1B800B1A1EB /* STVSwitchCellController.h in Headers */,
+				DAABBF2912EFF1B800B1A1EB /* STVSwitchCellView.h in Headers */,
+				DAABBF2B12EFF1B800B1A1EB /* STVTableViewController.h in Headers */,
+				DAABBF2D12EFF1B800B1A1EB /* STVTableViewDataSource.h in Headers */,
+				DAABBF2F12EFF1B800B1A1EB /* STVSection.h in Headers */,
+				DAABBF3112EFF1B800B1A1EB /* STVTextEditCellController.h in Headers */,
+				DAABBF3312EFF1B800B1A1EB /* STVTextEditCellView.h in Headers */,
+				DA8F15CB12F4A12E006D6025 /* STVActionSheetController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DAABBE7F12EFEBE700B1A1EB /* SimpleTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAABBE8312EFEC0600B1A1EB /* Build configuration list for PBXNativeTarget "SimpleTableView" */;
+			buildPhases = (
+				DAABBE7C12EFEBE700B1A1EB /* Headers */,
+				DAABBE7D12EFEBE700B1A1EB /* Sources */,
+				DAABBE7E12EFEBE700B1A1EB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTableView;
+			productName = SimpleTableView;
+			productReference = DAABBE8012EFEBE700B1A1EB /* libSimpleTableView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "SimpleTableView" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* GDK */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAABBE7F12EFEBE700B1A1EB /* SimpleTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAABBE7D12EFEBE700B1A1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAABBF1A12EFF1B800B1A1EB /* STVCellController.m in Sources */,
+				DAABBF1C12EFF1B800B1A1EB /* STVCoreDataListController.m in Sources */,
+				DAABBF1E12EFF1B800B1A1EB /* STVCurrencyFormatter.m in Sources */,
+				DAABBF2012EFF1B800B1A1EB /* STVGradientBackgroundView.m in Sources */,
+				DAABBF2812EFF1B800B1A1EB /* STVSwitchCellController.m in Sources */,
+				DAABBF2A12EFF1B800B1A1EB /* STVSwitchCellView.m in Sources */,
+				DAABBF2C12EFF1B800B1A1EB /* STVTableViewController.m in Sources */,
+				DAABBF2E12EFF1B800B1A1EB /* STVTableViewDataSource.m in Sources */,
+				DAABBF3012EFF1B800B1A1EB /* STVSection.m in Sources */,
+				DAABBF3212EFF1B800B1A1EB /* STVTextEditCellController.m in Sources */,
+				DAABBF3412EFF1B800B1A1EB /* STVTextEditCellView.m in Sources */,
+				DA8F15CC12F4A12E006D6025 /* STVActionSheetController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		DAABBE8112EFEBE800B1A1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = SimpleTableView;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAABBE8212EFEBE800B1A1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = SimpleTableView;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "SimpleTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAABBE8312EFEC0600B1A1EB /* Build configuration list for PBXNativeTarget "SimpleTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAABBE8112EFEBE800B1A1EB /* Debug */,
+				DAABBE8212EFEBE800B1A1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
