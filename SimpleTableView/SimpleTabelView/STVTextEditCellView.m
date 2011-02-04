@@ -21,12 +21,10 @@
 #import "STVTextEditCellView.h"
 
 @implementation STVTextEditCellView
-@synthesize labelField;
 @synthesize textField;
 
 - (void)dealloc 
 {
-  self.labelField = nil;
   self.textField = nil;
   
   [super dealloc];

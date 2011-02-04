@@ -20,7 +20,7 @@
 
 #import <UIKit/UIKit.h>
 #import "STVCellController.h"
-
+#import "STVTextEditCellView.h"
 
 // Block Definitions
 // ----------------------------------------------------------------------------
@@ -33,25 +33,30 @@ typedef void      (^STVTextCellSetter)(NSString *value);
 // Class Implementation
 // ----------------------------------------------------------------------------
 
-@interface STVTextEditCellController : STVCellController 
-<UITextFieldDelegate> {
+@interface STVTextEditCellController : NSObject 
+<UITextFieldDelegate, STVCellControllerProtocol> {
 @private
-    STVTextCellFormatter textFormatter;
-    STVTextCellGetter textGetter;
-    STVTextCellSetter textSetter;
-    UIKeyboardType keyboardType;
-    UIReturnKeyType returnKey;
+    NSString                *reuseIdentifier;
+    STVCellDidSelect        didSelectCellBlock;
+    STVCellNew              newCellBlock;
+    STVCellConfig           configCellBlock;
+    STVCellConfig           cellDidLoadBlock;
+    STVCellDelete           deleteCellBlock;
+    NSInteger               height;
+    BOOL                    editableCell;
+    BOOL                    swipeDeletable;
+
+    STVTextCellFormatter    textFormatter;
+    STVTextCellGetter       textGetter;
+    STVTextCellSetter       textSetter;
 }
 
 @property (nonatomic, copy) STVTextCellFormatter textFormatter;
 @property (nonatomic, copy) STVTextCellGetter textGetter;
 @property (nonatomic, copy) STVTextCellSetter textSetter;
 
-@property (nonatomic, assign) UIKeyboardType keyboardType;
-@property (nonatomic, assign) UIReturnKeyType returnKey;
-
 // TextCell with Keyboard Source
-+ (id)textEditCellWithTitle:(NSString *)title;
-- (id)textEditCellWithTitle:(NSString *)title;
++ (id)textEditCellWithPlaceholder:(NSString *)title gradientBackground:(BOOL)background;
+- (id)initWithPlaceholder:(NSString *)title gradientBackground:(BOOL)background;
 
 @end

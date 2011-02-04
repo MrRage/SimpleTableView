@@ -11,7 +11,7 @@
 typedef void (^STVDatePickerChange)(NSDate *date);
 typedef void (^STVPickerIndexChange)(NSArray *dataSource);
 
-@interface STVActionScheetController : NSObject 
+@interface STVActionSheetController : NSObject 
 <UIPickerViewDataSource, UIPickerViewDelegate, UIActionSheetDelegate> {
 @private        
     UIActionSheet *actionSheet;

@@ -10,9 +10,13 @@
 
 @implementation ExampleViewController
 
+@synthesize actionSheetController;
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"SimpleTableView Examples";
     
     //
     // TableViews are comprised of sections and rows.  So we use STVTabelViewSection to represent 
@@ -48,7 +52,7 @@
     // We are also going to set a didSelect on this cell so that it can update a value for us.  
     // notice our use of the __block in this example.
     //
-    cell = [STVCellController cellWithTitle:@"Images" 
+    cell = [STVCellController cellWithTitle:@"Value2Cell" 
                               accessoryType:UITableViewCellAccessoryDisclosureIndicator
                          gradientBackground:YES
                                       style:UITableViewCellStyleValue2];
@@ -72,7 +76,7 @@
     // the only valid cell you can use is the default one, text alignment is ignored in all other 
     // cell types.
     //
-    cell = [STVCellController cellWithTitle:@"Accept" 
+    cell = [STVCellController cellWithTitle:@"Centered Text Cell" 
                               accessoryType:UITableViewCellAccessoryNone
                          gradientBackground:YES 
                               textAlignment:UITextAlignmentCenter];
@@ -91,6 +95,75 @@
     };
     
     [section addCell:switchCell];
+    [self.dataSource addSection:section];
+    
+    //
+    // Here we setup a TextEditCell for both secure, and none secure information.
+    // Notice that we used 
+    //
+    section = [STVSection sectionWithTitle:@"Login"];
+    textEditCell = [STVTextEditCellController textEditCellWithPlaceholder:@"Login" gradientBackground:YES];
+    textEditCell.cellDidLoadBlock = ^(STVTextEditCellView *cellView) {
+        cellView.textField.secureTextEntry = NO;
+        cellView.textField.keyboardType = UIKeyboardTypeAlphabet;
+        cellView.textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    };
+    [section addCell:textEditCell];
+    
+    textEditCell = [STVTextEditCellController textEditCellWithPlaceholder:@"Password" gradientBackground:YES];
+    textEditCell.cellDidLoadBlock = ^(STVTextEditCellView *cellView) {
+        cellView.textField.secureTextEntry = YES;
+        cellView.textField.keyboardType = UIKeyboardTypeAlphabet;
+        cellView.textField.clearButtonMode = UITextFieldViewModeNever;
+    };
+    [section addCell:textEditCell];
+    
+    textEditCell = [STVTextEditCellController textEditCellWithPlaceholder:@"PIN" gradientBackground:YES];
+    textEditCell.cellDidLoadBlock = ^(STVTextEditCellView *cellView) {
+        cellView.textField.secureTextEntry = YES;
+        cellView.textField.keyboardType = UIKeyboardTypeNumberPad;
+        cellView.textField.clearButtonMode = UITextFieldViewModeNever;
+    };
+    
+    [section addCell:textEditCell];
+    [self.dataSource addSection:section];
+    
+    
+    //
+    // Finaly the Date/Picker ActionSheet Controllers
+    // Notice that we used 
+    //
+    section = [STVSection sectionWithTitle:@"ActionSheets"];
+    cell = [STVCellController cellWithTitle:@"Date Picker" 
+                              accessoryType:UITableViewCellAccessoryNone
+                         gradientBackground:YES 
+                              textAlignment:UITextAlignmentCenter];
+    cell.didSelectCellBlock = ^(id viewController, id cell) {
+        self.actionSheetController = [[STVActionSheetController alloc] initWithViewController:viewController];
+        [self.actionSheetController showDatePickerWithDate:[NSDate date] changedBlock:^(NSDate *date){
+            NSLog(@"New Date: %@", date);
+        }];
+    };
+    [section addCell:cell];
+    
+    //
+    // Finaly the Date/Picker ActionSheet Controllers
+    // Notice that we used 
+    //
+    cell = [STVCellController cellWithTitle:@"Picker" 
+                              accessoryType:UITableViewCellAccessoryNone
+                         gradientBackground:YES 
+                              textAlignment:UITextAlignmentCenter];
+    cell.didSelectCellBlock = ^(id viewController, id cell) {
+        NSArray *pickerData = [NSArray arrayWithObjects:[NSArray arrayWithObjects:@"1",@"2",@"3",@"4",nil],[NSArray arrayWithObjects:@"a",@"b",@"c",@"d",nil], nil];
+        self.actionSheetController = [[STVActionSheetController alloc] initWithViewController:viewController];
+        [self.actionSheetController showPickerViewWithTitle:@"Title" 
+                                             textDataSource:pickerData 
+                                               currentIndex:[NSArray arrayWithObjects:[NSNumber numberWithInt:2],[NSNumber numberWithInt:1],nil] 
+                                          indexChangedBlock:^(NSArray *array) { 
+                                          }];
+    };
+    [section addCell:cell];
     [self.dataSource addSection:section];
 }
 

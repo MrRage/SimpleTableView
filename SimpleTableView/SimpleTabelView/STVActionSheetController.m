@@ -8,7 +8,7 @@
 
 #import "STVActionSheetController.h"
 
-@implementation STVActionScheetController
+@implementation STVActionSheetController
 
 @synthesize actionSheet;
 @synthesize dateChagneBlock;
@@ -137,7 +137,15 @@
     
     [pickerSource release];
     [pickerIndexes release];
-    _Block_release(changeBlock);
+    
+    if (changeBlock) {
+        _Block_release(changeBlock);
+        changeBlock = nil;
+    }
+    if (dateChagneBlock != nil) {
+        _Block_release(dateChagneBlock);
+        dateChagneBlock = nil;
+    }
 }
 
 - (void)dismissPickerViewWithDone 

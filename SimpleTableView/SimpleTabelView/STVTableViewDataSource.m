@@ -212,7 +212,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     id<STVCellControllerProtocol> item = [[[sections objectAtIndex:indexPath.section] cells] objectAtIndex:indexPath.row];
-    [item didSelectCell:viewController fromTableView:[tableView cellForRowAtIndexPath:indexPath]];
+    [item didSelectCell:[tableView cellForRowAtIndexPath:indexPath] fromTableView:viewController];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

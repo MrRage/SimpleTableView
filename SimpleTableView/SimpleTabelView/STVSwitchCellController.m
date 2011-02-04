@@ -47,7 +47,7 @@
 
 - (id)initWithTitle:(NSString *)title gradientBackground:(BOOL)background
 {
-    if (self = [super init]) {
+    if ((self = [super init])) {
         editableCell = YES;
         self.reuseIdentifier = @"STVSwitchCellController";
         
@@ -128,7 +128,7 @@
 - (void)didSelectCell:(id)cell fromTableView:(id)tableView; 
 {
     if (didSelectCellBlock) {
-        didSelectCellBlock(cell, tableView);
+        didSelectCellBlock(tableView, cell);
     }
 }
 

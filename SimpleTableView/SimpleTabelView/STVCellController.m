@@ -207,7 +207,7 @@
 - (void)didSelectCell:(id)cell fromTableView:(id)tableView; 
 {
     if (didSelectCellBlock) {
-        didSelectCellBlock(cell, tableView);
+        didSelectCellBlock(tableView, cell);
     }
 }
 

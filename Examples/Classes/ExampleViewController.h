@@ -8,7 +8,10 @@
 
 #import <SimpleTabelView/SimpleTableView.h>
 
-@interface ExampleViewController : STVTableViewController
-
+@interface ExampleViewController : STVTableViewController {
+@private
+    STVActionSheetController *actionSheetController;
+}
+@property (nonatomic, retain) STVActionSheetController *actionSheetController;
 @end
 

@@ -22,9 +22,7 @@
 
 // Interfaces
 @interface STVTextEditCellView : UITableViewCell {
-    UILabel *labelField;
     UITextField *textField;
 }
-@property (nonatomic, retain) UILabel *labelField;
 @property (nonatomic, retain) UITextField *textField;
 @end
