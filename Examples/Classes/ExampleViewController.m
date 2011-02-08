@@ -76,10 +76,27 @@
     // the only valid cell you can use is the default one, text alignment is ignored in all other 
     // cell types.
     //
-    cell = [STVCellController cellWithTitle:@"Centered Text Cell" 
+    // This cell also creates another TableViewController with 100 cells and pushes it onto the
+    // view stack.  Its interesting that note that it dosn't take much code to create a tableview 
+    // especially if all you want to do is display a list of information.
+    //
+    cell = [STVCellController cellWithTitle:@"100 Cells" 
                               accessoryType:UITableViewCellAccessoryNone
                          gradientBackground:YES 
                               textAlignment:UITextAlignmentCenter];
+    cell.didSelectCellBlock = ^(id viewController, id cell) {
+        STVTableViewController *tableViewController = [[STVTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+        STVSection *tableViewSection = [STVSection sectionWithTitle:nil];
+        for (int i = 0; i < 100; i++) {
+            [tableViewSection.cells addObject:[STVCellController cellWithTitle:[NSString stringWithFormat:@"Cell %d of 100",i+1] 
+                                                                 accessoryType:UITableViewCellAccessoryNone 
+                                                            gradientBackground:YES 
+                                                                 textAlignment:UITextAlignmentCenter]];
+        }
+        [tableViewController.dataSource addSection:tableViewSection];
+        [[viewController navigationController] pushViewController:tableViewController animated:YES];
+        [tableViewController release];
+    };
     [section addCell:cell];
     
     // 

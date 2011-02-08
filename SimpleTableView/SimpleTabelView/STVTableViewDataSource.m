@@ -208,6 +208,15 @@
 }
 
 #pragma mark -
+#pragma mark Memory Managment 
+
+-(void)dealloc {
+    self.sections = nil;
+    
+    [super dealloc];
+}
+
+#pragma mark -
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
