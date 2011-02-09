@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA8F15CB12F4A12E006D6025 /* STVActionSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8F15C912F4A12E006D6025 /* STVActionSheetController.h */; };
-		DA8F15CC12F4A12E006D6025 /* STVActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F15CA12F4A12E006D6025 /* STVActionSheetController.m */; };
 		DAABBEF112EFEFF000B1A1EB /* STV_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DAABBEF012EFEFF000B1A1EB /* STV_Prefix.pch */; };
 		DAABBF1712EFF1B800B1A1EB /* SimpleTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBEF912EFF1B800B1A1EB /* SimpleTableView.h */; };
 		DAABBF1912EFF1B800B1A1EB /* STVCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = DAABBEFB12EFF1B800B1A1EB /* STVCellController.h */; };
@@ -40,10 +38,6 @@
 		DA2A237E12AEAEFC00D0C083 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DA2A238012AEAEFC00D0C083 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		DA5C9F291297A8DD00194120 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DA640B2B12F28D7900094F25 /* STVPopoverControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVPopoverControllers.h; sourceTree = "<group>"; };
-		DA640B2C12F28D7900094F25 /* STVPopoverControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVPopoverControllers.m; sourceTree = "<group>"; };
-		DA8F15C912F4A12E006D6025 /* STVActionSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVActionSheetController.h; sourceTree = "<group>"; };
-		DA8F15CA12F4A12E006D6025 /* STVActionSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVActionSheetController.m; sourceTree = "<group>"; };
 		DAABBE8012EFEBE700B1A1EB /* libSimpleTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSimpleTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAABBEF012EFEFF000B1A1EB /* STV_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STV_Prefix.pch; sourceTree = "<group>"; };
 		DAABBEF912EFF1B800B1A1EB /* SimpleTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableView.h; sourceTree = "<group>"; };
@@ -170,10 +164,6 @@
 				DAABBF1012EFF1B800B1A1EB /* STVTableViewDataSource.m */,
 				DAABBF1112EFF1B800B1A1EB /* STVSection.h */,
 				DAABBF1212EFF1B800B1A1EB /* STVSection.m */,
-				DA640B2B12F28D7900094F25 /* STVPopoverControllers.h */,
-				DA640B2C12F28D7900094F25 /* STVPopoverControllers.m */,
-				DA8F15C912F4A12E006D6025 /* STVActionSheetController.h */,
-				DA8F15CA12F4A12E006D6025 /* STVActionSheetController.m */,
 			);
 			path = SimpleTabelView;
 			sourceTree = "<group>";
@@ -198,7 +188,6 @@
 				DAABBF2F12EFF1B800B1A1EB /* STVSection.h in Headers */,
 				DAABBF3112EFF1B800B1A1EB /* STVTextEditCellController.h in Headers */,
 				DAABBF3312EFF1B800B1A1EB /* STVTextEditCellView.h in Headers */,
-				DA8F15CB12F4A12E006D6025 /* STVActionSheetController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +252,6 @@
 				DAABBF3012EFF1B800B1A1EB /* STVSection.m in Sources */,
 				DAABBF3212EFF1B800B1A1EB /* STVTextEditCellController.m in Sources */,
 				DAABBF3412EFF1B800B1A1EB /* STVTextEditCellView.m in Sources */,
-				DA8F15CC12F4A12E006D6025 /* STVActionSheetController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

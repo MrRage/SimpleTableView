@@ -30,4 +30,3 @@
 #import "STVTextEditCellController.h"
 #import "STVSwitchCellController.h"
 #import "STVGradientBackgroundView.h"
-#import "STVActionSheetController.h"
